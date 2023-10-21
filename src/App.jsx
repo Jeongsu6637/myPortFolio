@@ -55,7 +55,7 @@ function App() {
         <div className={classes.masthead_masthead}>
             <div className={classes.masthead_content}>
                 <div className={classes.masthead_content_title}>
-                    = Title =
+                    = 포트폴리오 =
                 </div>
                 <br/>
                 <div className={classes.masthead_content_content}>
@@ -191,76 +191,84 @@ function App() {
         </article>
 
         <article style={{width:"100%", backgroundColor:"yellow"}}>
-            <div>
+            <div className={classes.projects}>
                 <div className={classes.section_title}>
                     <div className={classes.section_title_text}>Projects</div>
                 </div>
                 <div className={classes.projects_container}>
                     <div className={classes.projects_stacks}>
-                        <div className={classes.projects_stacks_image}>
+                        <div className={classes.projects_stacks_title}>
                             <h3>프로젝트 이름</h3>
                         </div>
-                        <div style={{width:"500px"}} className={classes.projects_stacks_image}>
-                            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className={classes.projects_stacks_text}>
-                            프로젝트 내용 및 느낀점
+                        <div className={classes.projects_stacks_container}>
+                            <div className={classes.projects_stacks_content}>
+                                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                                    <SwiperSlide >
+                                        <img className={classes.projects_stacks_image} src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img className={classes.projects_stacks_image} src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img className={classes.projects_stacks_image} src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
+                            <div className={classes.projects_stacks_text}>
+                                프로젝트 내용 및 느낀점
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div className={classes.projects_container}>
                     <div className={classes.projects_stacks}>
                         <div className={classes.projects_stacks_image}>
                             <h3>프로젝트 이름</h3>
                         </div>
-                        <div style={{width:"500px"}} className={classes.projects_stacks_image}>
-                            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className={classes.projects_stacks_text}>
-                            프로젝트 내용 및 느낀점
+                        <div>
+                            <div style={{width:"500px"}} className={classes.projects_stacks_image}>
+                                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
+                            <div className={classes.projects_stacks_text}>
+                                프로젝트 내용 및 느낀점
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div className={classes.projects_container}>
                     <div className={classes.projects_stacks}>
                         <div className={classes.projects_stacks_image}>
                             <h3>프로젝트 이름</h3>
                         </div>
-                        <div style={{width:"500px"}} className={classes.projects_stacks_image}>
-                            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                                <SwiperSlide >
-                                    <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className={classes.projects_stacks_text}>
-                            프로젝트 내용 및 느낀점
+                        <div>
+                            <div style={{width:"500px"}} className={classes.projects_stacks_image}>
+                                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <img src="https://images.unsplash.com/photo-1681319359648-595d9cbf3c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NzYwMDYyfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
+                            <div className={classes.projects_stacks_text}>
+                                프로젝트 내용 및 느낀점
+                            </div>
                         </div>
                     </div>
                 </div>
